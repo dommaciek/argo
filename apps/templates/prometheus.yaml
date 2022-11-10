@@ -16,15 +16,8 @@ spec:
       values: |
         pushgateway:
           enabled: false
-        nodeExporter:
-          hostRootFsMount:
-            enabled: false
-            # Defines how new mounts in existing mounts on the node or in the container
-            # are propagated to the container or node, respectively. Possible values are
-            # None, HostToContainer, and Bidirectional. If this field is omitted, then
-            # None is used. More information on:
-            # https://kubernetes.io/docs/concepts/storage/volumes/#mount-propagation
-            mountPropagation: HostToContainer
+        prometheus-node-exporter:
+          hostRootFsMount: false
     repoURL: https://prometheus-community.github.io/helm-charts
     targetRevision: 15.6.0
   syncPolicy:
