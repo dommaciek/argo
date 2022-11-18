@@ -1,4 +1,4 @@
-argo-worfklows:
+argo-workflows:
   dex:
     enabled: false
   server:
