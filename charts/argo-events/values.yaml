@@ -1,0 +1,9 @@
+argo-events:
+  server:
+    extraArgs:
+      - --insecure
+    config:
+      repositories: |
+        - type: helm
+          name: argo-events
+          url: https://argoproj.github.io/argo-helm

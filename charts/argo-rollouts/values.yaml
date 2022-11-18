@@ -1,0 +1,9 @@
+argo-rollouts:
+  server:
+    extraArgs:
+      - --insecure
+    config:
+      repositories: |
+        - type: helm
+          name: argo-rollouts
+          url: https://argoproj.github.io/argo-helm
