@@ -1,0 +1,6 @@
+argo-worfklows:
+    config:
+      repositories: |
+        - type: helm
+          name: argo-workflows
+          url: https://argoproj.github.io/argo-helm
