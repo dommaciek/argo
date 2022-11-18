@@ -11,7 +11,7 @@ spec:
   destination:
     namespace: nginx
     name: in-cluster
-    server: https://kubernetes.default.svc
+{{/*    server: https://kubernetes.default.svc*/}}
   syncPolicy:
     automated: {}
     syncOptions:
