@@ -1,9 +1,7 @@
 argo-workflows:
-  dex:
-    enabled: false
   server:
     extraArgs:
-      - --insecure
+      - --auth-mode=server
     config:
       repositories: |
         - type: helm
